@@ -34,8 +34,7 @@ allTopics.forEach((li) => {
 // 13. Select all the elements with class `list` and store in variable `listOfSelectedTopics`
 let listOfSelectedTopics = document.querySelectorAll('.list');
 // 14. Select the first li element inside the `ul` element using `>` (direct child) and store in `firstLi`
-let ul = document.querySelector("ul");
-ul.firstElementChild;
+let ul = document.querySelector("ul>li");
 // 15. Select all the img element and log the number of element saying `The total number of img element is ---`
 console.log(`The total number of img element is ${document.querySelectorAll('img').length}`);
 // 16. Select all the `p` element and store in `allPElement`
