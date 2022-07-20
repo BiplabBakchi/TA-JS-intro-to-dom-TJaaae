@@ -6,7 +6,14 @@ default value to be "text" and return the input element inside label. (create it
 */
 
 // Your code goes here
-
+function createInputElm(label, type = 'text') {
+  let element = document.createElement('label');
+  element.innerText = label;
+  input = document.createElement('input');
+  element.append(input);
+  input.setAttribute('type', type);
+  return element;
+}
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
 createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></label>
@@ -14,7 +21,14 @@ createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></
 // 2. Do the same thing as above using string literal like `<h1>Hello</h1>`
 
 // Your code goes here
-
+function createInputElm(label, type = 'text') {
+  let element = document.createElement('label');
+  element.innerText = label;
+  input = document.createElement('input');
+  element.append(input);
+  input.setAttribute('type', type);
+  return element;
+}
 // TEST
 createInputElm('Your name'); //<label>Your name: <input type="text"></label>
 createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></label>
@@ -22,7 +36,15 @@ createInputElm('Your age', 'number'); //<label>Your age: <input type="number"></
 // 3. Create a function named `createList` that accept and array of data like ['Mango', 'Apple', 'Banana'] and returns
 // the html for the link like <ul> <li>Mango</li>  <li>Apple</li>  <li>Banana</li> </ul>
 // Your code goes here
-
+function createList(array) {
+  let list = document.createElement('ul')
+  for(let element of array) {
+    let li = document.createElement('li');
+    li.innerText = element;
+     list.append(li);
+  }
+  return list;
+}
 // TEST
 createList(['ALABAMA', 'ALASKA', 'HAWAII', 'KENTUCKY']);
 createList(['Afghanistan', 'Antarctica', 'Congo', 'Estonia']);
