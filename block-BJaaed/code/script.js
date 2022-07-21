@@ -118,13 +118,6 @@ let allBooks = {
 };
 
 /*
-<li class="book flex-30">
-          <img src="https://eloquentjavascript.net/img/cover.jpg" alt="">
-          <h2>Lorem ipsum dolor, sit amet consectetur </h2>
-          <p>Lorem ipsum dolor, sit amet  </p>
-          <button>Buy Now</button>
-        </li> 
-*/
 let ul = document.querySelector("ul");
 allBooks.books.forEach(book => {
   let li = document.createElement('li');
@@ -132,11 +125,15 @@ allBooks.books.forEach(book => {
   img.src = book.image
   img.alt = book.title
   let h2 = document.createElement('h2');
-  h2.innerText = book.title
+  h2.innerText = book.title;
   let p = document.createElement('p');
-  p.innerText = book.author
-  let button = document.createElement('button');
-  button.innerText = 'Buy now'
-  li.append(img, h2, p, button);
+  p.innerText = 'Author';
+  let strong = document.createElement('strong');
+  strong.innerText = book.author;
+  p.append(strong);
+  let a = document.createElement('a');
+  a.innerText = 'Buy now'
+  li.append(img, h2, p, a);
   ul.append(li);
 })
+*/
