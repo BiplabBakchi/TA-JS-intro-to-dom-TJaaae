@@ -117,7 +117,7 @@ let allBooks = {
   ],
 };
 
-/*
+
 let ul = document.querySelector("ul");
 allBooks.books.forEach(book => {
   let li = document.createElement('li');
@@ -136,4 +136,3 @@ allBooks.books.forEach(book => {
   li.append(img, h2, p, a);
   ul.append(li);
 })
-*/

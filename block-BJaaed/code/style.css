@@ -49,12 +49,11 @@ table {
 
 /*Custom Style*/
 
-
 body {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.5;
-    background-color: bisque;
+    background-color: rgb(255,228,196);
 }
 *,
 *::before,
@@ -81,21 +80,23 @@ a {
 .item-center {
     align-items: center;
 }
-.space-between {
-    justify-content: space-between;
-}
-.flex-30 {
-    flex: 0 1 30%;
-}
 
-.btn {
+
+li {
+    flex: 0 1 30%;
+    background-color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 10px;
+}
+a {
     display: inline-block;
     padding: 4px 12px;
     font-size: 14px;
     font-weight: 500;
     color: white;
     text-transform: capitalize;
-    background-color:rgb(1, 103, 103);
+    background-color:rgb(54,126,129);
     outline: 0;
     border: 0;
     border-radius: 2px;
@@ -105,16 +106,15 @@ a {
 /*General Style*/
 
 .header {
-    background-color: rgb(1, 103, 103);
+    background-color: rgb(54,126,129);
     padding: 15px 40px;
 }
 .heading {
     text-align: center;
     font-size: 24px;
-    color: rgb(190, 251, 98);
+    color:rgb(254,250,84);
     font-weight: 900;
 }
-
 img {
     width: 200px;
     height: 220px;
@@ -128,12 +128,5 @@ p {
     font-size: 13px;
     font-weight: 400;
     padding-bottom: 8px;
-}
-
-.box {
-    background-color: white;
-    text-align: center;
-    padding: 20px 10px;
-    margin: 10px;
 }
 
